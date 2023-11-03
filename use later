@@ -1,0 +1,25 @@
+        # def fix_order() -> bool:
+        #     def fix_order_element(index: int) -> bool:
+        #         if index >= len(self.cities):
+        #             return True
+        #         elem1, elem2 = (self.cities[index], self.cities[index + 1])
+        #         elemLeft = self.cities[index - 1]
+        #         if elem1[1] == elemLeft[1]:
+        #             return fix_order_element(index + 2)
+        #         elif elem2[1] == elemLeft[1]:
+        #             self.cities[index] = elem2
+        #             self.cities[index + 1] = elem1
+        #             return fix_order_element(index + 2)
+        #         else:
+        #             return False
+        #     isCorrect = fix_order_element(2)
+        #     if not isCorrect:
+        #         elem1, elem2 = (self.cities[0], self.cities[1])
+        #         self.cities[0] = elem2
+        #         self.cities[1] = elem1
+        #         isCorrect = fix_order_element(2)
+        #     return isCorrect
+        # if not fix_order():
+        #     self.route = []
+        #     self.cities = []
+        #     raise Exception("cannot contstruct a valid route with these tracks")
